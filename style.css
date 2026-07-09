@@ -6,6 +6,10 @@
 
 }
 
+body {
+    background-color: black;
+}
+
 .background {
     background-image: url("IMAGE/11.jpg");
     height: 115vh;
@@ -88,9 +92,10 @@ nav button {
 .hero .tex3 {
     font-weight: 500;
     padding-bottom: 16px;
-    text-align: center  ;
+    text-align: center;
 }
-.hero .search-button{
+
+.hero .search-button {
     display: flex;
     justify-content: center;
 }
@@ -105,14 +110,14 @@ nav button {
     border-radius: 3px;
     background-color: rgba(225, 225, 225, 0.1);
     opacity: 0.8;
-   /* background: transparent;*/
-   margin-right: 10px;
+    /* background: transparent;*/
+    margin-right: 10px;
 }
 
 
 
 
-.hero button{
+.hero button {
     height: 52px;
     width: 150px;
     background-color: rgb(229, 9, 20);
@@ -123,12 +128,44 @@ nav button {
     font-weight: 700;
 }
 
-.sepration_line{
+.sepration_line {
     height: 10px;
     background-color: gray;
 }
 
-.box{
-    height: 100%;
-    background-color: black;
+main {
+    height: 900px;
+    margin-top: 27px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.title {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe";
+    color: white;
+    margin-bottom: 25px;
+}
+
+
+.slider {
+    display: flex; /*align item in row*/
+    flex-wrap: nowrap; /* during adjusting screen size this help items is no shift in next line*/
+    overflow-x:auto ;
+    overflow-y: hidden;
+    gap: 16px;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    
+}
+
+
+.slider .card {
+    padding-bottom: 4.8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4.8px;
+    border-radius: 8px;
 }
